@@ -1,0 +1,111 @@
+<section class="about">
+    <div class="container">
+        <div class="row justify-content-around pt-5">
+            <div class="col-md-8 text-center">
+                <p class="content">Blockchain based applications with access to data from the real world.
+                    Access any API on the internet in a secure and trusted fashion.
+                    Generate functionally random numbers for games and contests.</p>
+                <p class="content bold">With Akroma, build applications that can’t be built anywhere else.</p>
+
+            </div>
+        </div>
+
+        <div class="row justify-content-around pt-5">
+            <div class="col" *ngIf="akroma">
+                <h1>Network</h1>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">BEST BLOCK</div>
+                    <div class="col">{{ akroma.height }}</div>
+                </div>
+                <!-- <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">AVG BLOCK TIME</div>
+                    <div class="col"> - </div>
+                </div> -->
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">HASH RATE</div>
+                    <div class="col">{{ akroma.hashRate }} GH/s</div>
+                </div>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">DIFFICULTY</div>
+                    <div class="col">{{ akroma.difficulty }} TH</div>
+                </div>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">CURRENT SUPPLY</div>
+                    <div class="col">{{ akroma.circulatingSupply }} </div>
+                </div>
+            </div>
+            <div class="col" *ngIf="network">
+                <h1>Masternodes</h1>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">FULL</div>
+                    <div class="col">{{ network.totalFull }}</div>
+                </div>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">REMOTE</div>
+                    <div class="col">{{ network.totalRemote }}</div>
+                </div>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">BOOT</div>
+                    <div class="col">{{ network.totalBoot }}</div>
+                </div>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">BALEFIRE</div>
+                    <div class="col">Coming Soon</div>
+                </div>
+            </div>
+            <!-- <div class="col">
+                <h1>Akroma</h1>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">Users</div>
+                    <div class="col">{{ network.totalUsers }}</div>
+                </div>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">Users</div>
+                    <div class="col">{{ network.totalUsers }}</div>
+                </div>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">Users</div>
+                    <div class="col">{{ network.totalUsers }}</div>
+                </div>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col">Users</div>
+                    <div class="col">{{ network.totalUsers }}</div>
+                </div>
+            </div> -->
+            <div class="col">
+                <h1>Compatibility</h1>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col-2">
+                        <img src="../../../../assets/images/ab-solidity.png" alt="">
+                    </div>
+                    <div class="col">Solidity</div>
+                </div>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col-2">
+                        <img src="../../../../assets/images/ab-truffle.png" alt="">
+                    </div>
+                    <div class="col">Truffle</div>
+                </div>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col-2">
+                        <img src="../../../../assets/images/ab-openzeppelin.png" alt="">
+                    </div>
+                    <div class="col">OpenZeppelin</div>
+                </div>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col-2">
+                        <img src="../../../../assets/images/ab-vscode.png" alt="">
+                    </div>
+                    <div class="col">VSCode</div>
+                </div>
+                <div class="row op pt-3 pb-3 mb-1 mr-1">
+                    <div class="col-2">
+                        <img src="../../../../assets/images/ab-atom.png" alt="">
+                    </div>
+                    <div class="col">Atom Editor</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

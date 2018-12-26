@@ -1,0 +1,29 @@
+footer {
+    background-size: cover;
+    background: url('../../../assets/images/footer-bg.svg'), linear-gradient(225deg, #3d0234 0%, #710664 100%);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    * {
+        color: white;
+    }
+
+    .col-sm {
+        text-align: left;
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    li {
+        margin: 10px 0;
+        font-weight: 400;
+    }
+}

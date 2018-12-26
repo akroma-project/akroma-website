@@ -1,0 +1,68 @@
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+.balefire {
+    background-image: url('../../../../assets/images/bg-balefire.png');
+    background-size: cover;
+    color: #FFFFFF;
+    >.container {
+        min-height: 820px;
+    }
+    a,
+    a:visited {
+        color: rgb(248, 246, 246);
+        text-decoration: none;
+    }
+    a:hover,
+    a.active {
+        text-decoration: underline;
+        opacity: 0.60;
+    }
+    .title {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        font-size: 48px;
+        text-align: center;
+        letter-spacing: 24px;
+        text-transform: uppercase;
+    }
+    .content {
+        font-weight: 400;
+        line-height: 1.6rem;
+    }
+    .source {
+        padding-top: 20px;
+        height: 120px;
+        margin-bottom: 2px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.1);
+        .source-title {
+            @include media-breakpoint-down(lg) {
+                font-size: 0.75rem;
+            }
+        }
+        div {
+            margin-top: 10px;
+        }
+        img {
+            height: 52px;
+        }
+    }
+    .value {
+        background: rgba(255, 255, 255, 0.1);
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        .copy {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            font-size: 24px;
+        }
+    }
+}

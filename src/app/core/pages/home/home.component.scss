@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/mixins/breakpoints";
+:host {
+    display: block;
+    min-height: 100vh;
+}
+
+.hero {
+    background-image: url('../../../../assets/images/bg-hero.jpg');
+    background-size: cover;
+    color: #fff;
+    >.container {
+        display: flex;
+        justify-content: center;
+        min-height: 820px;
+        flex-direction: column;
+    }
+    .title {
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: #000000;
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,16 @@
+.navbar {
+  // background-color: #333333;
+}
+
+i,
+a.navbar-brand,
+a.nav-link,
+a.nav-link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgba(2, 2, 2, 0.75);
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1), 0px 4px 7px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
