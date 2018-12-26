@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700"');
 
-@import 'variables';
 @import '~bootstrap/scss/bootstrap';
-@import 'fonts';
-@import "~ngx-toastr/toastr.css";
+// @import "~ngx-toastr/toastr.css";
 
 ::-webkit-input-placeholder {
   font-weight: 300;
@@ -19,4 +17,26 @@
 
 :-moz-placeholder {
   font-weight: 300;
+}
+
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+  margin: 1.5rem 0 1rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@include media-breakpoint-down(md) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
 }

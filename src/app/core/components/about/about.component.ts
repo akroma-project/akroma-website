@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
+  network: any;
+  akroma: any;
   constructor(   ) { }
 
   ngOnInit() {
